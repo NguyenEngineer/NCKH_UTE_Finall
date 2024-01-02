@@ -322,12 +322,12 @@ void loop()
 				static int smscnt[2] ={0,0};
 					char request[200];
 					if((result_heartbeat < data_heart_sensor) && (smscnt[0] < 2)){  // nhip tim <100
-						sprintf(request,"EMERGENCY----My Location: %s \n: https://deviot.me/detail.html?id=00001",location);
+						sprintf(request,"EMERGENCY----My Location: %s \n: https://iires.tech/detail.html?id=00001",location);
 						AT_Sms_Send((char *)"+84963877845",request);
 						smscnt[0] ++;
 					}
 					if((result_heartbeat > data_heart_sensor) && (smscnt[1] < 2)){
-						sprintf(request,"SOS---HIGH HEART RATE, I NEED HELP URGENTLY, MY LOCATION: %s \n: https://deviot.me/detail.html?id=00001",location);
+						sprintf(request,"SOS---HIGH HEART RATE, I NEED HELP URGENTLY, MY LOCATION: %s \n: https://iires.tech/detail.html?id=00001",location);
 						AT_Sms_Send((char *)"+84963877845",request);
 						smscnt[1] ++;
 					}
