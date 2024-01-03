@@ -219,7 +219,7 @@ int AT_SIM7600_HTTP_Get(char * request_url,char *rsp,uint16_t *sizess)
 	}
 	At_Command(request_url,(char *)"OK\r\n",10000);
 	At_Command((char *)"AT+HTTPPARA=\"CONTENT\",\"application/x-www-form-urlencoded\"\r\n",(char *)"OK\r\n",10000);
-	sprintf(buf,"AT+HTTPPARA=\"URL\",\"https://iires.tech/data/form\"\r\n");
+	sprintf(buf,"AT+HTTPPARA=\"URL\",\"http://iires.tech/data/form\"\r\n");
 	At_Command(buf,(char *)"OK\r\n",10000);
 	memset(buf,0,1024);
 	At_Command_response((char *)"AT+HTTPACTION=1\r\n",(char *)"+HTTPACTION",buf,&buflen,10000);

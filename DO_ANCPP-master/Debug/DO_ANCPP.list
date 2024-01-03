@@ -5409,7 +5409,7 @@ void loop()
  8002b0e:	681b      	ldr	r3, [r3, #0]
  8002b10:	2b01      	cmp	r3, #1
  8002b12:	dc0f      	bgt.n	8002b34 <_Z4loopv+0x390>
-						sprintf(request,"EMERGENCY----My Location: %s \n: https://iires.tech/detail.html?id=00001",location);
+						sprintf(request,"EMERGENCY----My Location: %s \n: http://iires.tech/detail.html?id=00001",location);
  8002b14:	463b      	mov	r3, r7
  8002b16:	4a24      	ldr	r2, [pc, #144]	; (8002ba8 <_Z4loopv+0x404>)
  8002b18:	4924      	ldr	r1, [pc, #144]	; (8002bac <_Z4loopv+0x408>)
@@ -5438,7 +5438,7 @@ void loop()
  8002b42:	685b      	ldr	r3, [r3, #4]
  8002b44:	2b01      	cmp	r3, #1
  8002b46:	dc0f      	bgt.n	8002b68 <_Z4loopv+0x3c4>
-						sprintf(request,"SOS---HIGH HEART RATE, I NEED HELP URGENTLY, MY LOCATION: %s \n: https://iires.tech/detail.html?id=00001",location);
+						sprintf(request,"SOS---HIGH HEART RATE, I NEED HELP URGENTLY, MY LOCATION: %s \n: http://iires.tech/detail.html?id=00001",location);
  8002b48:	463b      	mov	r3, r7
  8002b4a:	4a17      	ldr	r2, [pc, #92]	; (8002ba8 <_Z4loopv+0x404>)
  8002b4c:	4919      	ldr	r1, [pc, #100]	; (8002bb4 <_Z4loopv+0x410>)
@@ -6476,7 +6476,7 @@ int AT_SIM7600_HTTP_Get(char * request_url,char *rsp,uint16_t *sizess)
  80032ca:	4921      	ldr	r1, [pc, #132]	; (8003350 <_Z19AT_SIM7600_HTTP_GetPcS_Pt+0x130>)
  80032cc:	4825      	ldr	r0, [pc, #148]	; (8003364 <_Z19AT_SIM7600_HTTP_GetPcS_Pt+0x144>)
  80032ce:	f7ff fe39 	bl	8002f44 <_Z10At_CommandPcS_m>
-	sprintf(buf,"AT+HTTPPARA=\"URL\",\"https://iires.tech/data/form\"\r\n");
+	sprintf(buf,"AT+HTTPPARA=\"URL\",\"http://iires.tech/data/form\"\r\n");
  80032d2:	f107 0318 	add.w	r3, r7, #24
  80032d6:	4924      	ldr	r1, [pc, #144]	; (8003368 <_Z19AT_SIM7600_HTTP_GetPcS_Pt+0x148>)
  80032d8:	4618      	mov	r0, r3

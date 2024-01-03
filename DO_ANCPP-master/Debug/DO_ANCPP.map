@@ -4768,7 +4768,8 @@ LOAD E:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  *(.rodata)
  .rodata        0x000000000800d098       0x1b ./Core/Src/main.o
  *fill*         0x000000000800d0b3        0x1 
- .rodata        0x000000000800d0b4      0x29c ./Core/Src/myMain.o
+ .rodata        0x000000000800d0b4      0x29b ./Core/Src/myMain.o
+ *fill*         0x000000000800d34f        0x1 
  .rodata        0x000000000800d350      0x22a ./Core/Src/sim7600.o
  *(.rodata*)
  *fill*         0x000000000800d57a        0x2 
